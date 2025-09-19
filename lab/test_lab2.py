@@ -12,7 +12,6 @@ async def test_delayed_print_returns_message():
     result = await lab2.delayed_print(msg, 0.1)
     assert result == msg
 
-# ==== Задание 2 ====
 @pytest.mark.asyncio
 async def test_gather_three_messages_order_and_content():
     results = await lab2.gather_three_messages()
